@@ -1,0 +1,69 @@
+<button onclick='if(`${COMP_CHOICE}`==="ROCK")
+    {
+        result = "TIE";
+        alert(`YOU CLICKED ON ROCK AND THE COMPUTERS CHOICE WAS ${COMP_CHOICE},IT IS A ${result}`);
+    }
+    else if(`${COMP_CHOICE}`==="PAPER")
+    {
+        result  = "YOU LOSE";
+        alert(`YOU CLICKED ON ROCK AND THE COMPUTERS CHOICE WAS ${COMP_CHOICE}, SO ${result}`);
+    }
+    else(`${COMP_CHOICE}`==="SCISSOR")
+    {
+        result  = "YOU WIN";
+        alert(`YOU CLICKED ON ROCK AND THE COMPUTERS CHOICE WAS ${COMP_CHOICE}, SO ${result}`);
+    }
+'>ROCK</button>
+<button onclick='if(`${COMP_CHOICE}`==="ROCK")
+{
+    result = "YOU WIN";
+    alert(`YOU CLICKED ON PAPER AND THE COMPUTERS CHOICE WAS ${COMP_CHOICE},so ${result}`);
+}
+else if(`${COMP_CHOICE}`==="PAPER")
+{
+    result  = "IT IS A TIE";
+    alert(`YOU CLICKED ON PAPER AND THE COMPUTERS CHOICE WAS ${COMP_CHOICE}, SO ${result}`);
+}
+else(`${COMP_CHOICE}`==="SCISSOR")
+{
+    result  = "YOU LOSE";
+    alert(`YOU CLICKED ON PAPER AND THE COMPUTERS CHOICE WAS ${COMP_CHOICE}, SO ${result}`);
+}'
+
+
+>PAPER</button>
+
+
+
+
+
+<button onclick='if(`${COMP_CHOICE}`==="ROCK")
+{
+    result = "YOU LOSE";
+    alert(`YOU CLICKED ON SCISSOR AND THE COMPUTERS CHOICE WAS ${COMP_CHOICE},IT IS A ${result}`);
+}
+else if(`${COMP_CHOICE}`==="PAPER")
+{
+    result  = "YOU WIN";
+    alert(`YOU CLICKED ON SCISSOR AND THE COMPUTERS CHOICE WAS ${COMP_CHOICE}, SO ${result}`);
+}
+else(`${COMP_CHOICE}`==="SCISSOR")
+{
+    result  = "IT IS";
+    alert(`YOU CLICKED ON SCISSOR AND THE COMPUTERS CHOICE WAS ${COMP_CHOICE}, SO ${result}`);
+}'>SCISSOR</button>
+
+
+<script>
+    let result  = " ";
+
+    const choices = ["ROCK", "PAPER", "SCISSOR"];
+    let computer_choice_INDEX  = Math.floor(Math.random() * 3);
+    let COMP_CHOICE = choices[computer_choice_INDEX];
+    console.log(COMP_CHOICE);
+
+
+    
+
+
+</script>
